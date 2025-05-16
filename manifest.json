@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "Claude Gratuito com Puter.js",
+  "version": "1.0",
+  "description": "Acesse as APIs Claude 3.5 e 3.7 Sonnet via Puter.js em um popup do Chrome.",
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Pergunte ao Claude"
+    // Opcional: defina ícones aqui, por exemplo:
+    // "default_icon": {
+    //   "16": "images/icon16.png",
+    //   "48": "images/icon48.png",
+    //   "128": "images/icon128.png"
+    // }
+  },
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  }
+  // Permissões de host podem ser necessárias dependendo de como o Puter.js
+  // faz as chamadas API subjacentes. Começaremos sem permissões de host
+  // explícitas para manter a simplicidade, como o Puter.js lida com a conexão.
+  // Se ocorrerem erros de conexão, talvez seja necessário adicionar:
+  // "host_permissions": [
+  //   "https://api.anthropic.com/*" // Exemplo, o Puter.js pode usar outro endpoint
+  // ]
+}
